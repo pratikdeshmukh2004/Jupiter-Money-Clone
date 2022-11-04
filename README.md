@@ -4,11 +4,11 @@
 
 > This app is created for learning purpose.
 
-### Run On Expo
+### Run it on your device using Expo or Downloading APK file.
 Scan this QR Code from your Expo app
 ><img width="100"  src="https://qr.expo.dev/expo-go?owner=pratikdeshmukh2004&slug=Jupiter&releaseChannel=default&host=exp.host" />
 
-> @pratikdeshmukh2004/Jupiter
+> [Click here to download APK file](https://expo.dev/artifacts/eas/jcLBGaijtgGBhdNsbck2Hi.apk)
 
 ### ScreenShots
 
