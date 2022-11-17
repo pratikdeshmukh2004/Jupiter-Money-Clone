@@ -3,6 +3,7 @@ import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import Header2 from '../components/Header2';
 import colors from '../config/colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { StatusBar } from 'expo-status-bar';
 
 
 const logos = [
@@ -27,6 +28,7 @@ const logos = [
 function CardScreen(props) {
     return (
         <>
+            <StatusBar style='light' />
             <Header2 title={"Debit Card"} icon='information-outline' />
             <View style={styles.container}>
                 <View style={styles.card}>
@@ -50,7 +52,7 @@ function CardScreen(props) {
                 </View>
             </View>
             <View style={{ flexDirection: 'row', marginHorizontal: "5%", padding: 20, backgroundColor: "#d3c78a", borderRadius: 10, marginTop: 20 }}>
-                <MaterialCommunityIcons name='credit-card-fast' size={35} style={{marginTop: 10}} color={colors.primary} />
+                <MaterialCommunityIcons name='credit-card-fast' size={35} style={{ marginTop: 10 }} color={colors.primary} />
                 <View>
                     <Text style={{ fontSize: 13, fontWeight: 'bold', marginLeft: 20, width: "70%" }}>Use a physical Debit Card to save on offline purchases!</Text>
                     <Text style={{ fontSize: 13, marginLeft: 20, width: "80%" }}>Order now!</Text>

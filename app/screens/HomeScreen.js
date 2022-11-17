@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Header from "../components/Header"
 import Button from "../components/Button"
 import { Collapse, CollapseHeader, CollapseBody, AccordionList } from 'accordion-collapse-react-native';
+import { StatusBar } from 'expo-status-bar';
 
 
 const { width } = Dimensions.get('window');
@@ -67,6 +68,7 @@ function HomeScreen({ navigation }) {
   ]
   return (
     <View style={{ flex: 1 }}>
+      <StatusBar style='light' />
       <ScrollView stickyHeaderIndices={[0]} style={{
         flex: 1, paddingTop: 0, shadowOffset: {
           width: 0,

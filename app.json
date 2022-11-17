@@ -2,7 +2,7 @@
   "expo": {
     "name": "Jupiter",
     "slug": "Jupiter",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./app/assets/logo.png",
     "userInterfaceStyle": "light",
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/logo.png",
         "backgroundColor": "#ff6767"
-      }
+      },
+      "package": "com.pratikdeshmukh2004.Jupiter"
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a548f975-c102-4097-85e4-a110cc03b5eb"
+      }
     }
   }
 }

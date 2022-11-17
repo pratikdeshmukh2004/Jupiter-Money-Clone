@@ -6,6 +6,7 @@ import colors from '../config/colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import LottieView from 'lottie-react-native';
 import * as Linking from 'expo-linking';
+import { StatusBar } from 'expo-status-bar';
 
 
 const height = Dimensions.get("screen").height
@@ -60,6 +61,7 @@ export default function CameraScreen({ navigation }) {
 
     return (
         <View >
+            <StatusBar style='light' />
             {isFocused && !scaned ?
                 <Camera flashMode={flash} onFacesDetected={(e) => setfaces(e.faces)} onBarCodeScanned={(e) => __onScaned(e)} style={styles.camera} autoFocus type={type}>
                     <Text style={{ textAlign: 'center', color: 'white', marginTop: 100, fontWeight: 'bold', fontSize: 18 }}>Scan QR Code</Text>
